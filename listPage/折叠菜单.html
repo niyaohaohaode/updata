@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+
+			.mobil-box {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: rgba(41, 41, 41, 0.7);
+				transition: 0.3s all;
+				/* display: none; */
+			}
+
+			.mobilMenuNav {
+				position: fixed;
+				right: 20px;
+				top: 18px;
+				width: 28px;
+				text-align: center;
+				cursor: pointer;
+				z-index: 100;
+				transition: .4s all;
+			}
+
+			.mobilMenuNav span {
+				display: block;
+				width: 100%;
+				height: 2px;
+				background: #fff;
+				margin-bottom: 8px;
+			}
+
+			.mobilMenuNav span:last-of-type {
+				margin-bottom: 0px;
+			}
+
+			#lymobil {
+				width: 200px;
+				height: 100%;
+				background: rgba(0, 0, 0, .8);
+				position: fixed;
+				right: -198px;
+				top: 0;
+				/*display: none;*/
+				transition: .3s all;
+			}
+
+			.lymobilOne {
+				right: 220px;
+			}
+
+			.lymobilTwo {
+				right: 0px;
+			}
+
+			#lymobil li {
+				width: 100%;
+				overflow: hidden;
+				border-bottom: solid 1px #292929;
+			}
+
+			#lymobil li:hover a {
+				color: #f60;
+			}
+
+			#lymobil li:first-of-type a {
+				opacity: 1;
+			}
+
+			#lymobil li a {
+				display: block;
+				width: 100%;
+				height: 44px;
+				line-height: 44px;
+				text-align: center;
+				font-size: 14px;
+				color: white;
+				opacity: .7;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="mobilMenuNav">
+				<span id="span1"></span>
+				<span id="span2"></span>
+				<span id="span3"></span>
+			</div>
+			<nav class="mobil-box">
+				<ul class="clearfix" id="lymobil">
+					<li>1111</li>
+					<li>1111</li>
+					<li>1111</li>
+					<li>1111</li>
+					<li>1111</li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>

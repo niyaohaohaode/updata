@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="contentPageCss/contentPage.css" />
+		<link rel="stylesheet" type="text/css" href="../css/jSlider.min.css" />
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/jquery.jSlider.min.js"></script>
+	</head>
+	<body>
+		<header class="w pt30 mb10" id="headerOne">
+			<div class="w1200 ma oh">
+				<a href="##" class="fl db oh">
+					<h1>
+						<img src="../img/logo.jpg" />
+					</h1>
+				</a>
+				<ul class="clearfix fr pt10">
+					<li class="fl f16 oh cp"><a href="##" class="db f16">首页</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">研究与洞察</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">咨迅中心</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">宏观规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">工业规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">服务业规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">农业规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">林业规划</a><i></i></li>
+					<li class="fl f16 oh cp"><a href="##" class="db f16">关于我们</a><i></i></li>
+				</ul>
+			</div>
+		</header>
+		<header class="w pt15 pb5 mb10" id="headerTwo">
+			<div class="w ma oh">
+				<a href="##" class="db oh ma">
+					<h1>
+						<img src="../img/logo.jpg" />
+					</h1>
+				</a>
+				<div class="mobilMenuNav">
+					<span id="span1"></span>
+					<span id="span2"></span>
+					<span id="span3"></span>
+				</div>
+				<nav class="mobil-box">
+					<ul class="clearfix fl pt10" id="lymobil">
+						<li class="fl f14 oh cp"><a href="##" class="db f16">首页</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">研究与洞察</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">咨迅中心</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">宏观规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">工业规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">服务业规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">农业规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">林业规划</a></li>
+						<li class="fl f14 oh cp"><a href="##" class="db f16">关于我们</a></li>
+					</ul>
+				</nav>
+			</div>
+			<script>
+				$(function() {
+					$('.mobilMenuNav').click(function() {
+						$(this).toggleClass('lymobilOne')
+						if ($(".mobil-box").css("display") == "none") {
+							$(".mobil-box").show(100);
+						} else {
+							$(".mobil-box").hide(100);
+						}
+						if ($("#lymobil").css("right") == "-198px") {
+							$("#lymobil").css('right', '0px');
+							$('#span2').css('display', 'none')
+							$("#span1").css({
+								"transform": "rotate(-45deg)",
+								'margin-bottom': '0',
+								'background':'#fff'
+							})
+							$("#span3").css("transform", "rotate(45deg)")
+							$("#span3").css("background", "#fff")
+						} else {
+							$("#lymobil").css('right', '-198px');
+							$('#span2').css('display', 'block')
+							$("#span1").css({
+								"transform": "rotate(180deg)",
+								'margin-bottom': '8px',
+								'background':'#8E6F64'
+							})
+							$("#span3").css("transform", "rotate(180deg)")
+							$("#span3").css("background", "#8E6F64")
+						}
+					})
+				})
+			</script>
+		</header>
+
+		<section class="banner w oh">
+			<div class="top oh">
+				<div class="jSlider oh" id="slider1">
+					<div class="oh" id="banner1"></div>
+					<!-- <div class="oh" id="banner2"></div> -->
+					<div class="oh" id="banner3"></div>
+				</div>
+			</div>
+		</section>
+		<section class="w oh" id="content">
+			<div class="w1000 ma oh">
+				<p>当前位置>
+					<a href="##">首页</a>
+					>
+					<a href="##">行业咨询</a>
+					>
+					<a href="##">正文</a>
+				</p>
+				
+				<aside id="asideBox" class="fl oh mr30">
+					<span class="aside_title"></span>
+					<!-- <span class="asideNone">-</span> -->
+					<ul class='first_ul'>
+						<span class="m">咨询中心 <b>+</b></span>
+						<a href="##"></a>
+						<li><a href="##">行业资讯</a></li>
+						<li><a href="##">技术工艺</a></li>
+						<li><a href="##">投资热点</a></li>
+						<li><a href="##">产业政策</a></li>
+						<li><a href="##">会展信息</a></li>
+						<li><a href="##">企业动态</a></li>
+						<li><a href="##">财经点评</a></li>
+					</ul>
+					<ul>
+						<span class="m">统计数据 <b>+</b></span>
+						<li><a href="##">行业数据</a></li>
+						<li><a href="##">海关统计</a></li>
+						<li><a href="##">宏观经济</a></li>
+						<li><a href="##">监测数据</a></li>
+						<li><a href="##">经济指标</a></li>
+					</ul>
+					<ul>
+						<span>可行性报告 <b>+</b></span>
+						<li><a href="##">导读READ</a></li>
+						<li><a href="##">百科KNOWLEDG</a></li>
+						<li><a href="##">案例CASE</a></li>
+						<li><a href="##">报告专区</a></li>
+					</ul>
+					<ul>
+						<span>资金申请 <b>+</b></span>
+						<li><a href="##">导读READ</a></li>
+						<li><a href="##">百科KNOWLEDG</a></li>
+						<li><a href="##">案例CASE</a></li>
+						<li><a href="##">报告专区</a></li>
+					</ul>
+					<ul>
+						<span>商业计划书 <b>+</b></span>
+						<li><a href="##">导读READ</a></li>
+						<li><a href="##">百科KNOWLEDG</a></li>
+						<li><a href="##">案例CASE</a></li>
+						<li><a href="##">报告专区</a></li>
+					</ul>
+					<ul>
+						<span>节能评估 <b>+</b></span>
+						<li><a href="##">导读READ</a></li>
+						<li><a href="##">百科KNOWLEDG</a></li>
+						<li><a href="##">案例CASE</a></li>
+						<li><a href="##">报告专区</a></li>
+					</ul>
+
+					<ul>
+						<span>宏观规划 <b>+</b></span>
+						<li><a href="##">十三五规划</a></li>
+						<li><a href="##">十三五卫生与健康规划</a></li>
+						<li><a href="##">十三五国家信息化规划</a></li>
+						<li><a href="##">十三五深化医药卫生体制改革规划</a></li>
+						<li><a href="##">十三五旅游业发展规划</a></li>
+						<li><a href="##">十三五脱贫攻坚规划</a></li>
+						<li><a href="##">十三五生态环境保护规划</a></li>
+						<li class="pr"><a href="##">十三五国家战略性新兴产业发展规划</a></li>
+						<li><a href="##">生态园区规划</a></li>
+						<li><a href="##">循环经济规划</a></li>
+						<li><a href="##">区域经济规划</a></li>
+						<li><a href="##">国民经济规划</a></li>
+						<li><a href="##">新能源规划</a></li>
+						<li><a href="##">节能规划</a></li>
+						<li><a href="##">专家解答</a></li>
+						
+					</ul>
+					<ul>
+						<span>工业规划 <b>+</b></span>
+						<li><a href="##">装备制造业规划</a></li>
+						<li><a href="##">高新技术规划</a></li>
+						<li><a href="##">产业集群规划</a></li>
+						<li><a href="##">资源综合利用规划</a></li>
+						<li><a href="##">环境工程规划</a></li>
+						<li><a href="##">工业园区规划</a></li>
+						<li><a href="##">专家解答</a></li>
+						<li><a href="##">十三五国家战略性新兴产业发展规划</a></li>
+					</ul>
+					<ul>
+						<span>服务业规划 <b>+</b></span>
+						<li><a href="##">现代物流业规划</a></li>
+						<li><a href="##">冷链物流业规划</a></li>
+						<li><a href="##">中小企业规划</a></li>
+						<li><a href="##">现代贸易市场规划</a></li>
+						<li><a href="##">专家解答</a></li>
+					</ul>
+					<ul>
+						<span>林业规划 <b>+</b></span>
+						<li><a href="##">生态旅游业规划</a></li>
+						<li><a href="##">湿地公园规划</a></li>
+						<li><a href="##">森林公园规划</a></li>
+						<li><a href="##">自然保护区规划</a></li>
+						<li><a href="##">森林城市规划</a></li>
+						<li><a href="##">专家解答</a></li>
+					</ul>
+					<ul>
+						<span>农业规划 <b>+</b></span>
+						<li><a href="##">畜牧养殖业规划</a></li>
+						<li><a href="##">中药材基地规划</a></li>
+						<li><a href="##">农村能源业规划</a></li>
+						<li><a href="##">商品粮基地规划</a></li>
+						<li><a href="##">粮食增产规划</a></li>
+						<li><a href="##">专家解答</a></li>
+					</ul>
+					<ul>
+						<span>市场调查 <b>+</b></span>
+						<li><a href="##">消费者满意度调研</a></li>
+						<li><a href="##">企业调研产品调研</a></li>
+						<li><a href="##">销售渠道调研</a></li>
+						<li><a href="##">市场进入调研</a></li>
+						<li><a href="##">营销方案调研</a></li>
+						<li><a href="##">专家解答</a></li>
+					</ul>
+					<ul>
+						<span>行业研究 <b>+</b></span>
+						<li><a href="##">专题报告</a></li>
+						<li><a href="##">英文报告</a></li>
+						<li><a href="##">投资价值分析</a></li>
+						<li><a href="##">发展趋势</a></li>
+						<li><a href="##">市场预测</a></li>
+					</ul>
+				</aside>
+				<script>
+					$(function(){
+						var flag=false;
+						$(".aside_title").click(function() {
+							if(flag){
+								$("#asideBox").animate({
+									left: '-245px'
+								});
+								flag=false;
+							}else{
+								$("#asideBox").animate({
+									left: '0',
+								});
+									flag=true;
+							}
+						});
+					})
+				</script>
+				<div class="fr oh" id="lists">
+					<div class="contentTit">
+						<h2>拐点到了！2019：传统IT向云计算全面转移的分水岭</h2>
+						<p>
+							<span>发布时间</span>
+							<span>2019-07-26 09:41:47</span>
+							<span>来源：中经纵横</span>
+						</p>
+					</div>
+					<div class="contentGlance">
+						<p>“全面上云的拐点到了！”7月25日，阿里云智能总裁张建锋在2019阿里云峰会上海站上提出，今年是从传统IT向云计算全面转移的分水岭。阿里云将以“四张王牌”——飞天云操作系统、飞天大数据平台、阿里巴巴双中台和智联网AIoT，助力政企客户走进All
+							in Cloud时代。</p>
+						<p class="tc" style="font-size: 14px!important">阿里巴巴钉钉副总裁 田群喜接受中国经济网记者采访。王婉莹/摄影</p>
+						<p>
+							<strong>All in Cloud：成本下降5成，安全性提升50倍</strong>
+						</p>
+						<p>云计算作为一项新兴技术，经历过去10年的发展，已经在关键技术和应用规模上实现对传统IT的全面超越，云、大数据、AIoT和移动化技术引领时代。</p>
+						<p>IDC最近发布的《全球云计算IT基础设施市场预测报告》显示：2019年全球云上的IT基础设施占比超过传统数据中心，成市场主导者。</p>
+						<p>“全面上云是时代必然，今年是一个非常重要的拐点。”张建锋说，在技术层面，云计算在成本、稳定性、安全和效率层面已经远超传统IT。“上云后综合成本下降一半，稳定性有10倍以上提升，安全性更是提升50倍。”</p>
+						<p>数据显示，过去5年，阿里云核心基础产品价格累计降低66%。以业内通用的TCO标准（即总拥有成本）计算，用云可比传统IT节省一半以上的成本。</p>
+						<p>据了解，现在已有上万家企业将IT系统全面迁移到阿里云。这些全面上云的客户，其中不乏各个行业的大中型企业。</p>
+						<p>峰会当天，全球最大CRM软件服务提供商Salesforce宣布与阿里巴巴达成战略合作，将集成阿里云向企业客户提供服务和支持。根据合作协议，未来Salesforce的核心服务，包括销售云、服务云、商业云和Salesforce平台，将全面集成阿里云，为大中华区客户提供全面服务。</p>
+						<p class="h25"></p>
+						<!-- <p class="h25"></p> -->
+						<p class="f14">阿里巴巴集团副总裁、阿里云智能数字政府事业部总裁许诗军接受中国经济网记者采访。</p>
+						<p><strong>四大王牌：“飞天”单日数据处理量超600PB</strong></p>
+						<p>在张建锋看来，政企全面上云将经过基础设施上云、大数据上云、云上中台和云上智能四个阶段。“经过10年发展让阿里云具备了‘四张王牌’——飞天云操作系统、飞天大数据平台、阿里巴巴双中台和智联网AIoT，帮助政企客户实现技术和商业的指数级增长。”</p>
+						<p>据介绍，飞天是中国唯一自主研发的云操作系统，调度全球数百万台服务器，在全球200多个国家和地区为数百万客户提供服务，包括中国80%科技公司与一半以上的上市企业。2017年获得中国电子学会16年来颁发的唯一科技进步奖特等奖。</p>
+						<p>“飞天大数据平台是当前国内规模最大的计算平台，可扩展至10万台计算集群，曾创下四项海量数据排序世界纪录。”张建锋表示，飞天在阿里巴巴经济体中支撑了全局数据存储和计算，单日数据处理量超过600PB。</p>
+						<p>而数据中台和业务中台则让阿里巴巴经济体多元业务互联互通，业务创新层出不穷，人机协同大量运用，数据智能开创全新的商业形态。“在海外再造一个淘宝天猫，只需要两三个月时间。盒马更是仅用4周就开发上线。”张建锋说。</p>
+						<p>阿里云智能总裁张建锋。</p>
+						<p>升级服务数字政府战略：让办事像逛淘宝一样方便</p>
+						<p>随着数字政府建设不断创新深入，政务服务质量和社会治理效能也越来越高，办事正在从“最多跑一次”向“一次都不用跑”迈进。</p>
+						<p>阿里巴巴集团副总裁、阿里云智能数字政府事业部总裁许诗军介绍，在数字政府领域，阿里巴巴已与全国30个省市区达成合作，覆盖了442个城市，包括1000多项服务类型，服务了9亿用户。</p>
+						<p>本次峰会上，阿里巴巴宣布升级服务数字政府战略，整合阿里云、支付宝、钉钉、高德等面向政府端的技术、产品、服务和资源，用系统化能力服务政府数字化升级，让办事像逛淘宝一样方便！</p>
+						<p>　比如，在上海，用支付宝刷脸就能查违章、交罚单；在江西，“赣服通” 支付宝小程序已经上线离婚证、结婚证、献血证等89种电子证件。</p>
+						<p>在率先启动数字政府建设的浙江，已成为数字政府建设的创新范本。</p>
+						<p>阿里巴巴钉钉副总裁田群喜介绍，国税总局浙江省税务局基于“钉钉+丁税宝”打造的浙江税务征纳沟通平台，让企业办税“一次都不用跑”，已经服务超过150万家企业。超过百万的政府公职人员在“浙政钉”上办公。</p>
+						<p>浙江一网通办APP和小程序“浙里办”支持超过220类政务服务，其中130多项热门业务均已实现“一次都不用跑”，占比超6成。截至4月20日，“浙里办”支付宝小程序实名用户首破1000万，总用户数超过2300万。这意味着每两名浙江人就有一位使用“浙里办”。</p>
+						<p>查成绩、交罚单、提公积金、办护照、收垃圾……据统计，中国人能在支付宝上办的事已经超过1000类。随着云的基础设施越来越完善和稳定，未来也许还有更多可能…… （经济日报-中国经济网记者王婉莹）</p>
+						
+						<p class="prevP f16"><strong>上一篇 : </strong><a href="##">红黄蓝教育又出事！旗下青岛幼儿园一外教涉嫌猥亵女童被捕</a></p>
+						<p class="nextP f16"><strong>下一篇 : </strong><a href="##">最后一页</a></p>
+					</div>
+
+					<!-- <p>
+						<a href="##">8113条</a>
+						<a href="##">上一页</a>
+						<a href="##">1</a>
+						<a href="##">2</a>
+						<a href="##">3</a>
+						<a href="##">4</a>
+						<a href="##">5</a>
+						<a href="##">6</a>
+						<a href="##">7</a>
+						<a href="##">8</a>
+						<a href="##">9</a>
+						<a href="##">10</a>..&nbsp;
+						<a href="##">541</a>
+						<a href="##">下一页</a>
+					</p> -->
+				</div>
+			</div>
+
+			<script>
+				$('aside ul span').click(function() {
+					var curLi = $(this).parent().find('li');
+					var restUl = $(this).parent().siblings('ul');
+					if (curLi.css('display') == 'none') {
+						curLi.slideDown();
+						curLi.parent().find('b').text('-');
+					} else {
+						curLi.slideUp();
+						curLi.parent().find('b').text('+');
+					}
+					restUl.find('li').slideUp();
+					restUl.find('b').text('+');
+				});
+			</script>
+		</section>
+		<footer class="w oh">
+			<div class="ma w1100 oh">
+				<p>
+					<a href="##">关于我们</a>
+					<a href="##">网站地图</a>
+					<a href="##">联系我们</a>
+				</p>
+				<p>中国市场研究网 © 版权所有 北京中经纵横经济研究院</p>
+				<p>单位地址：北京市西城区国宏大厦（国家发改委宏观院）B座23层</p>
+				<p>电话：010-65067990　65067996 传真：010-65066990 全国统一咨询电话：4008790365 邮箱：vip@21360.cn</p>
+				<p>京ICP备07500824号</p>
+			</div>
+		</footer>
+		<footer class="w oh">
+			<div class="ma w1100 oh">
+				<p>
+					<a href="##">关于我们</a>
+					<a href="##">网站地图</a>
+					<a href="##">联系我们</a>
+				</p>
+				<p>中国市场研究网  © 版权所有 北京中经纵横经济研究院 </p>
+				<p>北京市西城区国宏大厦（国家发改委宏观院）B座23层</p>
+				<p>电话：010-65067990　65067996</p>
+				<p>全国统一咨询电话：4008790365 </p>
+				<p>传真：010-65066990 </p>
+				
+				<p>邮箱：vip@21360.cn</p>
+				<p>京ICP备07500824号</p>
+			</div>
+		</footer>
+	</body>
+</html>
